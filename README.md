@@ -59,6 +59,17 @@ The license plate detection model was trained on the following dataset:
 
 ---
 
+## Notes
+
+- The OCR model uses PaddleOCR with English language configuration; you can customize it if needed.  
+- Turkish license plate correction is applied to improve OCR results.  
+- Detected plates are saved in `plates.db` SQLite database file with timestamp, track ID, class name, and plate text.  
+- The GUI displays video feed on the left and a table with detected plates on the right.  
+- Make sure your environment supports Tkinter GUI.  
+- The YOLOv11 model weights (`y11_e20.pt`) should be present in the project folder or provide the correct path.
+
+- 
+
 ## How to Run
 
 1. Clone this repository
